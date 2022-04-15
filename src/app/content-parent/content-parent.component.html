@@ -1,0 +1,9 @@
+<p>content-parent works!</p>
+
+<ng-container *ngFor="let student of students">
+  <app-content-child [student]="student">
+    <ng-container *ngFor="let subject of student.subjects">
+      <div>test</div>
+    </ng-container>
+  </app-content-child>
+</ng-container>
